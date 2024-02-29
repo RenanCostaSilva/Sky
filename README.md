@@ -11,9 +11,9 @@ Simples aplicativo de filmes utilizando a SKY como modelo.
 ![mobile 3](https://github.com/RenanCostaSilva/Sky/blob/master/imagem3.png)
 ![mobile 4](https://github.com/RenanCostaSilva/Sky/blob/master/imagem4.png)
 ![mobile 5](https://github.com/RenanCostaSilva/Sky/blob/master/imagem5.png)
-![mobile 6](https://github.com/RenanCostaSilva/Sky/blob/master/imagem6.png)
-![mobile 7](https://github.com/RenanCostaSilva/Sky/blob/master/imagem7.png)
-![mobile 8](https://github.com/RenanCostaSilva/Sky/blob/master/imagem8.png)
+![mobile 6](https://github.com/RenanCostaSilva/Sky/blob/master/imagem6.jpg)
+![mobile 7](https://github.com/RenanCostaSilva/Sky/blob/master/imagem7.jpg)
+![mobile 8](https://github.com/RenanCostaSilva/Sky/blob/master/imagem8.jpg)
 ![mobile 9](https://github.com/RenanCostaSilva/Sky/blob/master/imagem9.png)
 
 ## SDK
