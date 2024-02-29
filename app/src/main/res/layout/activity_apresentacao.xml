@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_sky_apresentacao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sky"
+        tools:context=".ui.activity.Apresentacao">
+
+        <TextView
+            android:id="@+id/tv_sky_logo_nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/label_app_mensagem"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/tv_sky_logo"
+            app:layout_constraintStart_toStartOf="@+id/tv_sky_logo"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sky_logo" />
+
+        <TextView
+            android:id="@+id/tv_sky_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/label_nome_app"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="96sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

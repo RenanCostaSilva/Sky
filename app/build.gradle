@@ -1,0 +1,81 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'com.google.devtools.ksp'
+}
+
+android {
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "br.com.renancsdev.sky"
+        minSdk 21
+        //noinspection EditedTargetSdkVersion
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    dataBinding{
+        enabled = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+    namespace 'br.com.renancsdev.sky'
+}
+
+dependencies {
+
+    def retrofit2_version = "2.9.0" // Last Update Stable May 20, 2020
+    def gson_version = "2.10.1"     // Last Update Stable Jan 06, 2023
+    def glide_version = "4.16.0"    // Last Update Stable Jan 06, 2023
+    def picasso_version = "2.8"     // Last Update Stable Jan 24, 2024
+    def mockito_version = "5.10.0"   // Last Update Stable Jan 24, 2024
+    def powermock_version = "2.0.9"       // Last Update Stable Nov 01, 2020
+    
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit2_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit2_version"
+
+    // Gson
+    implementation "com.google.code.gson:gson:$gson_version"
+
+    // Glide
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    //kapt "com.github.bumptech.glide:compiler:$glide_version"
+
+    //Imagem
+    implementation "com.squareup.picasso:picasso:$picasso_version"
+
+
+    //Teste Espresso
+    implementation("androidx.test.espresso:espresso-contrib:3.5.1")
+    implementation("com.forkingcode.espresso.contrib:espresso-descendant-actions:1.5.0")
+
+    // Teste Mockito
+    androidTestImplementation("org.mockito:mockito-core: $mockito_version")
+    androidTestImplementation("org.mockito:mockito-android:$mockito_version")
+    androidTestImplementation("org.powermock:powermock-module-junit4:$powermock_version")
+
+
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

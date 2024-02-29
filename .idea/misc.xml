@@ -1,0 +1,35 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Legion5i/Android/PROJETOS/KOTLIN/AndroidStudio/2022/Categorias/TestesTecnicos/Accenture/2022/Sky/Sky/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3675" />
+        <entry key="..\:/Legion5i/Android/PROJETOS/KOTLIN/AndroidStudio/2022/Categorias/TestesTecnicos/Accenture/2022/Sky/Sky/app/src/main/res/layout/activity_apresentacao.xml" value="0.33" />
+        <entry key="..\:/Legion5i/Android/PROJETOS/KOTLIN/AndroidStudio/2022/Categorias/TestesTecnicos/Accenture/2022/Sky/Sky/app/src/main/res/layout/activity_detalhe_filmes.xml" value="0.5" />
+        <entry key="..\:/Legion5i/Android/PROJETOS/KOTLIN/AndroidStudio/2022/Categorias/TestesTecnicos/Accenture/2022/Sky/Sky/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Legion5i/Android/PROJETOS/KOTLIN/AndroidStudio/2022/Categorias/TestesTecnicos/Accenture/2022/Sky/Sky/app/src/main/res/layout/item_list.xml" value="0.2821557971014493" />
+        <entry key="..\:/Legion5i/Android/PROJETOS/KOTLIN/AndroidStudio/2022/Categorias/TestesTecnicos/Accenture/Sky/Sky/app/src/main/res/layout/activity_apresentacao.xml" value="0.36666666666666664" />
+        <entry key="..\:/Legion5i/Android/PROJETOS/KOTLIN/AndroidStudio/2022/Categorias/TestesTecnicos/Accenture/Sky/Sky/app/src/main/res/layout/activity_detalhe_filmes.xml" value="0.25" />
+        <entry key="..\:/Legion5i/Android/PROJETOS/KOTLIN/AndroidStudio/2022/Categorias/TestesTecnicos/Accenture/Sky/Sky/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Legion5i/Android/PROJETOS/KOTLIN/AndroidStudio/2022/Categorias/TestesTecnicos/Accenture/Sky/Sky/app/src/main/res/layout/fragment_detalhe_filmes.xml" value="0.36666666666666664" />
+        <entry key="..\:/Legion5i/Android/PROJETOS/KOTLIN/AndroidStudio/2022/Categorias/TestesTecnicos/Accenture/Sky/Sky/app/src/main/res/layout/fragment_filmes.xml" value="0.365625" />
+        <entry key="..\:/Legion5i/Android/PROJETOS/KOTLIN/AndroidStudio/2022/Categorias/TestesTecnicos/Accenture/Sky/Sky/app/src/main/res/layout/include_progressbar_layout.xml" value="0.2595108695652174" />
+        <entry key="..\:/Legion5i/Android/PROJETOS/KOTLIN/AndroidStudio/2022/Categorias/TestesTecnicos/Accenture/Sky/Sky/app/src/main/res/layout/item_list.xml" value="0.33" />
+        <entry key="..\:/Legion5i/Android/PROJETOS/KOTLIN/AndroidStudio/2022/Categorias/TestesTecnicos/Accenture/Sky/Sky/app/src/main/res/layout/sky_recyclerview_filme_item.xml" value="0.25" />
+        <entry key="..\:/Mobile/Nativo/Android/Android Studio/Kotlin/Categorias/TestesTecnicos/Accenture/2022/Sky/Sky/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.36666666666666664" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
