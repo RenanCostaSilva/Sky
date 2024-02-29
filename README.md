@@ -6,15 +6,15 @@
 Simples aplicativo de filmes utilizando a SKY como modelo.
 
 ## Imagens da Aplicação
-![mobile 1](https://github.com/RenanCostaSilva/Sky_Accenture_API/blob/master/imagem1.png)
-![mobile 2](https://github.com/RenanCostaSilva/Sky_Accenture_API/blob/master/imagem2.png)
-![mobile 3](https://github.com/RenanCostaSilva/Sky_Accenture_API/blob/master/imagem3.png)
-![mobile 4](https://github.com/RenanCostaSilva/Sky_Accenture_API/blob/master/imagem4.png)
-![mobile 5](https://github.com/RenanCostaSilva/Sky_Accenture_API/blob/master/imagem5.png)
-![mobile 6](https://github.com/RenanCostaSilva/Sky_Accenture_API/blob/master/imagem6.png)
-![mobile 7](https://github.com/RenanCostaSilva/Sky_Accenture_API/blob/master/imagem7.png)
-![mobile 8](https://github.com/RenanCostaSilva/Sky_Accenture_API/blob/master/imagem8.png)
-![mobile 9](https://github.com/RenanCostaSilva/Sky_Accenture_API/blob/master/imagem9.png)
+![mobile 1](https://github.com/RenanCostaSilva/Sky/blob/master/imagem1.png)
+![mobile 2](https://github.com/RenanCostaSilva/Sky/blob/master/imagem2.png)
+![mobile 3](https://github.com/RenanCostaSilva/Sky/blob/master/imagem3.png)
+![mobile 4](https://github.com/RenanCostaSilva/Sky/blob/master/imagem4.png)
+![mobile 5](https://github.com/RenanCostaSilva/Sky/blob/master/imagem5.png)
+![mobile 6](https://github.com/RenanCostaSilva/Sky/blob/master/imagem6.png)
+![mobile 7](https://github.com/RenanCostaSilva/Sky/blob/master/imagem7.png)
+![mobile 8](https://github.com/RenanCostaSilva/Sky/blob/master/imagem8.png)
+![mobile 9](https://github.com/RenanCostaSilva/Sky/blob/master/imagem9.png)
 
 ## SDK
 minSdk: 21 / alvo: 34
