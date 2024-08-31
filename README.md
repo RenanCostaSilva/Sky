@@ -21,9 +21,10 @@ minSdk: 21 / alvo: 34
 
 ## Atualização
 - Fevereiro 2024
+- Agosto 2024
 
 ## Próxima Atualização prevista
-- Agosto 2024
+- Dezembro 2024
 
 ## Tecnologias Utilizadas
 
@@ -40,14 +41,17 @@ minSdk: 21 / alvo: 34
 - Suporta Portrait,Landscape
 
 ### Injeção de Dependência
-Não houve necessidade de uso , devido a simplicidade da aplicação
+- Será implementeado o koin na próxima atualização
 
 ### Observável
-LiveData / ViewModel
+LiveData / ViewModel , padrão da Google , apesar de não ser bem legível
 
 ### Jetpack
-- dataBinding
-- AppCompatActivity
+- databinding Oneway
+- Activity
+- appcompat
+- cardview
+- gridLayout
 
 ## Biblioteca
 - Retrofit 2 
@@ -63,7 +67,7 @@ LiveData / ViewModel
 - Motorola Edge 20 , Android 13
 
 ## Sistema Operacional
-- Windows 11
+- Windows 11 , macOS
 
 # Autor
  - Renan Costa e Silva

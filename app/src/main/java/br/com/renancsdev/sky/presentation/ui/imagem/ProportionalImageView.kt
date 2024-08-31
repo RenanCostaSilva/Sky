@@ -1,4 +1,4 @@
-package br.com.renancsdev.sky.ui.imagem
+package br.com.renancsdev.sky.presentation.ui.imagem
 
 import android.content.Context
 import android.util.AttributeSet

@@ -38,4 +38,7 @@
         proteção política de Vito para agir. Don Corleone odeia esta idéia, pois está satisfeito em operar com jogo, mulheres e proteção,
         mas isto será apenas a ponta do iceberg de uma mortal luta entre as "famílias".</string>
 
+    <!-- Label da descricao dos filmes -->
+    <string name="erro_api_apikey_notFound">Informe a sua api key correta no arquivo\n app/src/main/res/values/strings.xml</string>
+
 </resources>

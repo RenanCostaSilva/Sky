@@ -7,7 +7,7 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import br.com.renancsdev.sky.R
-import br.com.renancsdev.sky.ui.activity.Apresentacao
+import br.com.renancsdev.sky.presentation.ui.activity.ApresentacaoActivity
 import org.hamcrest.CoreMatchers
 import org.junit.Assert
 import org.junit.Rule
@@ -16,7 +16,7 @@ import org.junit.runner.RunWith
 
 
 @RunWith(AndroidJUnit4::class)
-class ApresentacaoActivityTest {
+class ApresentacaoActivityActivityTest {
 
     @Test
     fun useAppContext() {
@@ -26,7 +26,7 @@ class ApresentacaoActivityTest {
     }
 
     @get:Rule
-    val detalhe = ActivityScenarioRule(Apresentacao::class.java)
+    val detalhe = ActivityScenarioRule(ApresentacaoActivity::class.java)
 
     @Test
     fun testeExibicaoTelaApresentacao(){
