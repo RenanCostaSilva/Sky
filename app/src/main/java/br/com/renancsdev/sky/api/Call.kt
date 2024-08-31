@@ -28,7 +28,7 @@ class Call(var context: Context, private var binding: ActivityMainBinding) {
                 mostraRespostaDaAPI(response)
             }
             override fun onFailure(call: Call<Result>, t: Throwable) {
-                Log.e("Repository", "${t.message}")
+                Log.e("Api", "Error: ${t.message}")
                 Toast.makeText(context , "Failed to get response: ${t.message}" , Toast.LENGTH_SHORT).show()
                 mostarLogRespostaAPI("ChamadaAPI" , "Erro, motivo: ${t.message}")
             }
@@ -38,7 +38,7 @@ class Call(var context: Context, private var binding: ActivityMainBinding) {
         if(buscarDaRespostaDaApi(resposta)){
             configurarAdapterDeRespostaAPI(resposta , binding)
         }else{
-            Log.e("App", resposta.errorBody().toString())
+            Log.e("Api", " Erro: ${resposta.errorBody().toString()}")
             Toast.makeText(context , resposta.errorBody().toString(), Toast.LENGTH_SHORT).show()
         }
     }

@@ -1,4 +1,4 @@
-package br.com.renancsdev.sky.ui.activity.viewmodel
+package br.com.renancsdev.sky.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

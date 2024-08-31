@@ -6,13 +6,13 @@
     <data>
         <variable
             name="detalheViewModel"
-            type="br.com.renancsdev.sky.ui.activity.viewmodel.DetalheViewModel" />
+            type="br.com.renancsdev.sky.viewmodel.DetalheViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.activity.DetalheFilmes">
+        tools:context=".ui.activity.DetalheFilmesActivity">
 
         <br.com.renancsdev.sky.ui.imagem.ProportionalImageView
             android:id="@+id/detalhe_video_wallpapper"

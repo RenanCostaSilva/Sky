@@ -7,7 +7,7 @@ import br.com.renancsdev.sky.databinding.ItemListBinding
 import br.com.renancsdev.sky.extension.adicionarDadosNoIntent
 import br.com.renancsdev.sky.extension.exibirNoGlide
 import br.com.renancsdev.sky.model.Filmes
-import br.com.renancsdev.sky.ui.activity.DetalheFilmes
+import br.com.renancsdev.sky.ui.activity.DetalheFilmesActivity
 
 
 class RecyclerFilmeViewHolder(private var binding: ItemListBinding): RecyclerView.ViewHolder(binding.root) {
@@ -19,7 +19,7 @@ class RecyclerFilmeViewHolder(private var binding: ItemListBinding): RecyclerVie
     }
 
     private fun iniciarDados(filmes: Filmes){
-        binding.cvCardItemFilme.setOnClickListener {context.startActivity(Intent(context , DetalheFilmes::class.java).adicionarDadosNoIntent(filmes)) }
+        binding.cvCardItemFilme.setOnClickListener {context.startActivity(Intent(context , DetalheFilmesActivity::class.java).adicionarDadosNoIntent(filmes)) }
         binding.skyFilmeFoto.exibirNoGlide(filmes.poster_path)
         binding.skyFilmeNome.text = filmes.title
     }

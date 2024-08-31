@@ -17,8 +17,7 @@
         android:theme="@style/Theme.Sky"
         tools:targetApi="31">
         <activity
-            android:name=".ui.activity.Apresentacao"
-            android:screenOrientation="fullSensor"
+            android:name=".ui.activity.ApresentacaoActivity"
             android:theme="@style/Theme.NoStatusBar"
             android:exported="true" >
             <intent-filter>
@@ -28,13 +27,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activity.DetalheFilmes"
+            android:name=".ui.activity.DetalheFilmesActivity"
             android:exported="false"
-            android:screenOrientation="fullSensor"
             android:theme="@style/Theme.NoStatusBar" />
         <activity
             android:name=".ui.activity.MainActivity"
-            android:screenOrientation="fullSensor"
             android:exported="false"
             android:theme="@style/Theme.NoStatusBar">
         </activity>

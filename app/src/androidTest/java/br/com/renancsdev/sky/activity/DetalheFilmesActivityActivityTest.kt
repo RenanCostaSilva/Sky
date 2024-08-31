@@ -10,7 +10,7 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import br.com.renancsdev.sky.R
-import br.com.renancsdev.sky.ui.activity.DetalheFilmes
+import br.com.renancsdev.sky.ui.activity.DetalheFilmesActivity
 import org.hamcrest.CoreMatchers
 import org.junit.Assert
 import org.junit.Rule
@@ -19,7 +19,7 @@ import org.junit.runner.RunWith
 
 
 @RunWith(AndroidJUnit4::class)
-class DetalheFilmesActivityTest {
+class DetalheFilmesActivityActivityTest {
 
     @Test
     fun useAppContext() {
@@ -29,7 +29,7 @@ class DetalheFilmesActivityTest {
     }
 
     @get:Rule
-    val detalhe = ActivityScenarioRule(DetalheFilmes::class.java)
+    val detalhe = ActivityScenarioRule(DetalheFilmesActivity::class.java)
 
     @Test
     fun testarExibicaoDasImagensEmDetalhe(){
