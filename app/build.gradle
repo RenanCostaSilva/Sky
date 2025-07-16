@@ -1,29 +1,30 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'kotlin-kapt'
-    id 'com.google.devtools.ksp'
+    id 'kotlin-kapt' // Mantenha se você usa bibliotecas que geram código com Kapt (ex: Room, Dagger/Hilt)
+    id 'com.google.devtools.ksp' // Mantenha se você usa KSP (alternativa mais rápida ao Kapt)
 }
 
 android {
-    compileSdk 34
+    compileSdk 35 // Mantém a compilação para a API mais recente
 
     defaultConfig {
         applicationId "br.com.renancsdev.sky"
-        minSdk 21
-        //noinspection EditedTargetSdkVersion
-        targetSdk 34
+        minSdk 21 // Mantém o suporte mínimo ao Android 5.0 Lollipop
+        targetSdk 35 // Garante que o app é otimizado para a API mais recente
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-    dataBinding{
-        enabled = true
+    dataBinding {
+        enabled = true // Mantém o Data Binding habilitado
     }
     buildTypes {
         release {
-            minifyEnabled false
+            // **IMPORTANTE:** Mude para 'true' para reduzir o tamanho do APK e ofuscar o código em builds de produção.
+            // Lembre-se de testar seu app extensivamente com minifyEnabled true.
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -38,44 +39,63 @@ android {
 }
 
 dependencies {
+    // Definindo as versões das bibliotecas em variáveis para facilitar a manutenção
+    // (Embora Version Catalogs sejam a forma preferida, este é o método anterior)
+    def retrofit_version = "2.11.0"     // Última versão estável
+    def gson_version = "2.11.0"         // Última versão estável
+    def glide_version = "4.16.0"        // Última versão estável
+    def picasso_version = "3.0.0-alpha06"         // Versão do Picasso - REMOVIDO para evitar redundância com Glide
 
-    def retrofit2_version = "2.9.0" // Last Update Stable May 20, 2020
-    def gson_version = "2.10.1"     // Last Update Stable Jan 06, 2023
-    def glide_version = "4.16.0"    // Last Update Stable Jan 06, 2023
-    def picasso_version = "2.8"     // Last Update Stable Jan 24, 2024
-    def mockito_version = "5.10.0"   // Last Update Stable Jan 24, 2024
-    def powermock_version = "2.0.9"       // Last Update Stable Nov 01, 2020
-    
-    // Retrofit
-    implementation "com.squareup.retrofit2:retrofit:$retrofit2_version"
-    implementation "com.squareup.retrofit2:converter-gson:$retrofit2_version"
+    def mockito_version = "5.12.0"      // Última versão estável
+    // def powermock_version = "2.0.9"     // PowerMock - REMOVIDO (desaconselhado e desatualizado)
 
-    // Gson
+    def androidx_core_ktx_version = "1.16.0"
+    def appcompat_version = "1.7.1"
+    def material_version = "1.12.0"
+    def constraintlayout_version = "2.2.1" // Última versão estável
+
+    def junit_version = "4.13.2"        // Última versão do JUnit 4
+    def androidx_test_ext_junit_version = "1.2.1"
+    def espresso_version = "3.6.1"      // Versão base para Espresso
+    def espresso_descendant_actions_version = "1.5.0" // Última versão conhecida
+
+
+    // AndroidX Core
+    implementation "androidx.core:core-ktx:$androidx_core_ktx_version"
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
+    implementation "com.google.android.material:material:$material_version"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintlayout_version"
+
+    // Networking
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
     implementation "com.google.code.gson:gson:$gson_version"
 
-    // Glide
+    // Imagem (Usando apenas Glide - Picasso foi removido para evitar redundância)
     implementation "com.github.bumptech.glide:glide:$glide_version"
-    //kapt "com.github.bumptech.glide:compiler:$glide_version"
+    // Se você usa o Glide com Kapt/KSP para processamento de anotações (comum em RecyclerViews):
+    // kapt "com.github.bumptech.glide:compiler:$glide_version" // Use se você tiver 'kotlin-kapt'
+    // ksp "com.github.bumptech.glide:compiler:$glide_version"   // Use se você tiver 'com.google.devtools.ksp'
+    implementation("com.squareup.picasso3:picasso:$picasso_version")
 
-    //Imagem
-    implementation "com.squareup.picasso:picasso:$picasso_version"
+    implementation 'com.google.android.material:material:1.12.0'
 
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.12.0' // Última versão estável em Julho/2025
 
-    //Teste Espresso
-    implementation("androidx.test.espresso:espresso-contrib:3.5.1")
-    implementation("com.forkingcode.espresso.contrib:espresso-descendant-actions:1.5.0")
+    implementation "androidx.activity:activity-ktx:1.10.1"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.1"
 
-    // Teste Mockito
-    androidTestImplementation("org.mockito:mockito-core: $mockito_version")
-    androidTestImplementation("org.mockito:mockito-android:$mockito_version")
-    androidTestImplementation("org.powermock:powermock-module-junit4:$powermock_version")
+    // Koin Core e para ViewModel
+    implementation "io.insert-koin:koin-android:3.5.3"
 
+    // Testes Unitários e de UI
+    testImplementation "junit:junit:$junit_version"
+    androidTestImplementation "androidx.test.ext:junit:$androidx_test_ext_junit_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+    androidTestImplementation "androidx.test.espresso:espresso-contrib:$espresso_version" // Alinhado com espresso_version
+    androidTestImplementation "com.forkingcode.espresso.contrib:espresso-descendant-actions:$espresso_descendant_actions_version"
 
-    implementation 'androidx.core:core-ktx:1.12.0'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.11.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    // Testes Mockito (PowerMock removido)
+    androidTestImplementation "org.mockito:mockito-core:$mockito_version"
+    androidTestImplementation "org.mockito:mockito-android:$mockito_version"
 }

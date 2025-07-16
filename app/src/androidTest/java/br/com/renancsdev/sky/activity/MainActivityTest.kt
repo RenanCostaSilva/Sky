@@ -9,7 +9,7 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import br.com.renancsdev.sky.R
-import br.com.renancsdev.sky.ui.activity.MainActivity
+import br.com.renancsdev.sky.presentation.ui.activity.MainActivity
 import org.junit.Assert
 import org.junit.Rule
 import org.junit.Test

@@ -1,4 +1,4 @@
-package br.com.renancsdev.sky.extension
+package br.com.renancsdev.sky.presentation.ui.extension
 
 import android.app.Activity
 

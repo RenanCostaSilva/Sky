@@ -6,7 +6,7 @@
     <data>
         <variable
             name="mainViewModel"
-            type="br.com.renancsdev.sky.viewmodel.MainViewModel" />
+            type="br.com.renancsdev.sky.presentation.viewmodel.FilmeViewModel" />
         <import type="android.view.View"/>
     </data>
 
@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/Primaria"
-        tools:context=".ui.activity.MainActivity">
+        tools:context=".presentation.ui.activity.MainActivity">
 
         <RelativeLayout
             android:layout_width="match_parent"

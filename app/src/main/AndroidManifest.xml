@@ -4,9 +4,9 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
 
     <application
+        android:name=".presentation.di.App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -17,7 +17,7 @@
         android:theme="@style/Theme.Sky"
         tools:targetApi="31">
         <activity
-            android:name=".ui.activity.ApresentacaoActivity"
+            android:name=".presentation.ui.activity.ApresentacaoActivity"
             android:theme="@style/Theme.NoStatusBar"
             android:exported="true" >
             <intent-filter>
@@ -27,11 +27,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activity.DetalheFilmesActivity"
+            android:name=".presentation.ui.activity.DetalheFilmesActivity"
             android:exported="false"
             android:theme="@style/Theme.NoStatusBar" />
         <activity
-            android:name=".ui.activity.MainActivity"
+            android:name=".presentation.ui.activity.MainActivity"
             android:exported="false"
             android:theme="@style/Theme.NoStatusBar">
         </activity>

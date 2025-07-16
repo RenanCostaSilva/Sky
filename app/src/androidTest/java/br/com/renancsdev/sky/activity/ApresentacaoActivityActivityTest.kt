@@ -7,7 +7,7 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import br.com.renancsdev.sky.R
-import br.com.renancsdev.sky.ui.activity.ApresentacaoActivity
+import br.com.renancsdev.sky.presentation.ui.activity.ApresentacaoActivity
 import org.hamcrest.CoreMatchers
 import org.junit.Assert
 import org.junit.Rule
