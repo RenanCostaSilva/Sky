@@ -6,7 +6,7 @@
     <string name="label_app_mensagem">TV por assinatura</string>
 
     <!-- Key da API -->
-    <string name="api_key">4a41cd7bc92b603d034f1fa964940240</string>
+    <string name="api_key">informe_a_sua_api_key_aqui</string>
 
     <!-- Label dos filmes -->
     <string name="texto_titulo_tela_filmes">Uma seleção de filmes imperdiveis:</string>
