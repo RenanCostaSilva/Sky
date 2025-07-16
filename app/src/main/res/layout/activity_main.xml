@@ -6,15 +6,14 @@
     <data>
         <variable
             name="mainViewModel"
-            type="br.com.renancsdev.sky.presentation.viewmodel.FilmeViewModel" />
-        <import type="android.view.View"/>
+            type="br.com.renancsdev.sky.ui.activity.viewmodel.MainViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/Primaria"
-        tools:context=".presentation.ui.activity.MainActivity">
+        tools:context=".ui.activity.MainActivity">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -82,14 +81,6 @@
 
             </FrameLayout>
 
-            <include
-                android:id="@+id/includ_erro_api"
-                layout="@layout/layout_error_api"
-                android:visibility="@{mainViewModel.isError ? View.VISIBLE : View.GONE}"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
         </RelativeLayout>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
