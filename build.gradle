@@ -2,7 +2,7 @@ buildscript {
     ext {
         // A versão mais recente do Android Gradle Plugin (AGP) é 8.10.1 (Julho de 2025).
         // É crucial manter as versões dos plugins de 'application' e 'library' sincronizadas.
-        agp_version = '8.10.1'
+        agp_version = '9.4.1'
         // A versão estável mais recente do plugin Kotlin é 2.0.0 (Julho de 2025).
         kotlin_version = '2.0.0'
         // A versão do KSP deve ser compatível com a versão do Kotlin.
